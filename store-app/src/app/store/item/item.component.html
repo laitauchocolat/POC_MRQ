@@ -1,0 +1,32 @@
+    <div class="pure-g">
+      <div class="pure-u-1">
+        <img class="image" [src]="item.url">
+      </div>
+    </div>
+    <div class="pure-g">
+      <div class="pure-u-1">
+        <b class="title">{{item.title}}</b>
+      </div>
+    </div>
+    <div class="pure-g">
+      <div class="pure-u-1">
+        <i *ngFor="let star of item.stars;" class="icon material-icons">grade</i>
+      </div>
+    </div>
+    <div class="pure-g">
+      <div class="pure-u-1">
+        <p class="title">{{item.price}} $</p>
+      </div>
+    </div>
+    <div class="pure-g">
+      <div class="pure-u-1" style="display: inline-flex;">
+        <i class="icon material-icons">shopping_cart</i>
+        <button (click)="method(item)" class="title" style="text-decoration: underline;border: none;
+        background:none;
+        outline: none;">{{action}}</button>
+        <div *ngIf="item.count > 0">
+          ({{item.count}})
+          <i class="icon material-icons" style="color: green;">check</i>
+        </div>
+      </div>
+    </div>

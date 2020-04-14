@@ -1,0 +1,10 @@
+  <div class="pure-g" style="justify-content: center">
+    <app-item 
+    *ngFor="let item of items;" 
+    class="pure-u-1-5" 
+    style="margin: 10px;" 
+    [item]="item"
+    [action]="action"
+    [method]="method">
+    </app-item>
+  </div>

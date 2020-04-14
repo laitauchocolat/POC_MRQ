@@ -1,0 +1,14 @@
+<div id="menu">
+  <div class="pure-menu">
+    <a class="pure-menu-heading" href="#">Infonuagique</a>
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item" routerLinkActive="pure-menu-selected"><a routerLink="/store"
+          class="pure-menu-link">Magasin</a></li>
+      <li class="pure-menu-item" routerLinkActive="pure-menu-selected"><a routerLink="/login"
+          class="pure-menu-link">Connexion</a></li>
+      <li class="pure-menu-item menu-item-divided" routerLinkActive="pure-menu-selected">
+        <a routerLink="/cart" class="pure-menu-link" >Panier ({{cartService.length()}})</a>
+      </li>
+    </ul>
+  </div>
+</div>

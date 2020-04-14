@@ -1,0 +1,13 @@
+.image{
+    height:100%;
+    width:100%;
+}
+
+.title{
+    margin:5px;
+    display: inline-block;
+}
+
+.icon{
+    margin-right: 5px;
+}
